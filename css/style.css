@@ -1,0 +1,254 @@
+
+@charset: "utf-8";
+
+/* ========================== */
+    
+/* INDISPENSABLES */
+    
+/* Boites */
+    
+*,
+*::before,
+*::after {
+        box-sizing: border-box;
+    }
+
+/* Clearfix */
+
+.clearfix::after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+/* Texte caché */
+.no_text {
+    font-size: 0;
+    margin: 0;
+}
+
+/* Navigation */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin; 0;
+}
+
+img {
+    display: block;
+}
+
+/*========================*/
+
+/* IMPORTANT emboittement et selecion */
+
+/*Mise en forme des box*/
+
+
+/* Polices & Textes */
+
+html {
+    font-size: 75%; /* 1rem devient 12px */
+}
+
+body {
+    font-family: 'Lato', 'Arial', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+/* Boutons & Call to action */
+
+.btn_1 {
+    background-color: #565d64;
+    display: block;
+    padding: 15px;
+    
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .5s;
+    
+    border: 1px solid transparent;
+}
+
+.btn_1:hover {
+    background-color: #fff;
+    color: #565d64;
+    border: 1px solid #565d64;
+}
+
+body {
+    
+}
+
+/* === HEADER === */
+
+header {
+    background-color: cadetblue;
+    background-image: url(../images/background_header.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    
+    height: 100px;
+    padding: 25px 0;
+    
+    color: #fff;
+}
+
+header.header_home {
+    background-position: bottom center;
+    height: 600px;
+}
+
+/* Topbar */
+
+section#topbar {
+    /*background-color: blueviolet;*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Social nav */
+
+#social_nav a,
+#social_nav a:visited {
+    display: block;
+    height: 60px;
+    transition: all .5s;
+}
+
+#social_nav a#picto_fb {
+    background: transparent url(../images/picto_facebook.png) no-repeat center;
+}
+
+#social_nav a#picto_tw {
+    background: transparent url(../images/picto_twitter.png) no-repeat center;
+}
+
+#social_nav a#picto_ig {
+    background: transparent url(../images/picto_instagram.png) no-repeat center;
+}
+
+#social_nav a:hover,
+#social_nav a:focus,
+#social_nav a:active {
+    opacity: .5;
+}
+
+/* Titres */
+
+header h2 {
+    font-size: 3.01em;
+    margin: 125px 0px 5px;
+}
+
+header h3 {
+    font-size: 1.34em;
+    letter-spacing: .125em;
+    margin: 0;
+}
+
+/* === MAIN === */
+
+main {
+
+}
+
+/* GALLERIE */
+
+section#gallery {
+    background-color: #eee;
+    padding: 50px 0;
+}
+
+#gallery div#gallery_content {
+    background-color: #eee;
+    
+    flex-wrap: wrap;
+}
+
+#gallery_content h2 {
+    width: inherit;
+    color: #808080;
+    font-size: 1em;
+    letter-spacing: .25em;
+    margin: 0 0 35px;
+}
+
+/* Articles */
+
+article.miniature {
+    background-color: orange;
+    position: relative;
+    
+    margin-bottom: 20px;
+}
+
+p.likes {
+    color: #fff;
+    text-transform: uppercase;
+    
+    position: absolute;
+    top: 260px;
+    left: 20px;
+}
+
+div.infos {
+    background-color: #fff;
+    padding: 20px;
+    text-align: left;
+    color: #808080;
+    font-style: italic;
+}
+
+div.infos h3 {
+    font-size: 1em;
+    margin: 0 0 5px;
+}
+
+div.infos p {
+    margin: 5px 0;
+}
+
+div.infos p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* CONTACT */
+
+section#contact {
+    padding: 40px 0 100px;
+    color: #565d64;
+}
+
+#contact h2 {
+    font-size: 3.01em;
+    margin-bottom: 20px;
+}
+
+#contact h3 {
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+/* === FOOTER === */
+
+footer {
+    border-top: 1px solid #565d64;
+    padding-bottom: 50px;
+    
+    color: #565d64;
+    text-transform: uppercase;
+    font-size: 1.34em;
+}‚
